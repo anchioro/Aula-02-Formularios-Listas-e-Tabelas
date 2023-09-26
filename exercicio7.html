@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercício 7</title>
+  </head>
+  <body>
+    <!-- 7. Crie o arquivo HTML necessário para exibir o formulário abaixo-->
+
+    <form>
+      <fieldset>
+        <legend>Dados Pessoais</legend>
+        <label for="nome">Nome do Aluno:</label>
+        <input
+          type="text"
+          name="nome"
+          id="nome"
+          placeholder="Digite nome do aluno"
+        /><br /><br />
+
+        <label for="dataNascimento">Nascimento:</label>
+        <input
+          type="date"
+          name="dataNascimento"
+          id="dataNascimento"
+          min="2000-01-01"
+          max="2020-01-01"
+        /><br /><br />
+
+        <label for="nomeMae">Nome da Mãe:</label>
+        <input
+          type="text"
+          name="nomeMae"
+          id="nomeMae"
+          placeholder="Digite nome da mãe"
+        /><br /><br />
+
+        <label for="nomePai">Nome do Pai:</label>
+        <input
+          type="text"
+          name="nomePai"
+          id="nomePai"
+          placeholder="Digite nome do pai"
+        /><br /><br />
+
+        <label for="telefone">Telefone:</label>
+        <input
+          type="text"
+          name="telefone"
+          id="telefone"
+          placeholder="Digite número de telefone"
+        />
+      </fieldset>
+    </form>
+
+    <form>
+      <fieldset>
+        <legend>Informações da Matrícula</legend>
+
+        <label for="serie">Série</label>
+        <select name="serie" id="serie">
+          <option value="" selected disabled>Selecione uma opção</option>
+          <option value="Pré-escola">Pré-escola</option>
+          <option value="Fundamental 1">Fundamental 1</option>
+          <option value="Fundamental 2">Fundamental 2</option>
+          <option value="Ensino Médio">Ensino Médio</option></select
+        ><br /><br />
+
+        <label for="turno">Turno:</label><br />
+        <input type="radio" name="turno" id="turno" />Matutino
+        <input type="radio" name="turno" id="turno" />Vespertino <br /><br />
+
+        <label for="atividadesExtracurriculares"
+          >Atividades Extracurriculares:</label
+        >
+        <br />
+
+        <input type="checkbox" name="atividades" id="atividades" />Informática
+        <br />
+        <input type="checkbox" name="atividades" id="atividades" />Música <br />
+        <input type="checkbox" name="atividades" id="atividades" />Balet <br />
+        <input type="checkbox" name="atividades" id="atividades" />Pintura
+        <br />
+        <input type="checkbox" name="atividades" id="atividades" />Judô <br />
+        <input type="checkbox" name="atividades" id="atividades" />Futebol
+      </fieldset>
+    </form>
+
+    <button type="submit">Enviar formulário</button>
+    <button type="reset">Limpar formulário</button>
+  </body>
+</html>
